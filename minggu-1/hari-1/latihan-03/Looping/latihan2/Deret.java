@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Deret {
     public static void main(String[] args) {
 
-        System.out.println("Here's a simple multiplication table using loops:");
         for (int i = 1; i <= 10; i++) {
             System.out.print(i + " ");
         }
