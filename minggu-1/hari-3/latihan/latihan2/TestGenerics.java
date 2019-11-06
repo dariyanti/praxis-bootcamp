@@ -9,4 +9,3 @@ public class TestGenerics<T> {
         return this.o;
     }
 }
-
