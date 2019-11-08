@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JsonEncodeDemo",
+            "request": "launch",
+            "mainClass": "app.JsonEncodeDemo",
+            "projectName": "JSONCobaLib"
+        }
+    ]
+}
