@@ -1,6 +1,3 @@
-
-Here is the program source code:
-
 public class Deposit extends ATMMachine
 {
     static double deposit;
