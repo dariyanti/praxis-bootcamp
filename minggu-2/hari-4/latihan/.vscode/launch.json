@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AbstractFactoryPatternDemo",
+            "request": "launch",
+            "mainClass": "abstrackfactorypattern.AbstractFactoryPatternDemo",
+            "projectName": "latihan-1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FactoryPatternDemo",
+            "request": "launch",
+            "mainClass": "factorypattern.FactoryPatternDemo",
+            "projectName": "latihan-1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FactoryPatternDemo",
+            "request": "launch",
+            "mainClass": "latihan.FactoryPatternDemo",
+            "projectName": "latihan-1"
+        }
+    ]
+}
