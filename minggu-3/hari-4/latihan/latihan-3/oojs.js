@@ -1,3 +1,7 @@
+/*Basically,semuanya, apapun didalam JavaScript adalah sebuah object atau 
+    di berlakukan sebagai object, dan dapat disimpan didalam sebuah variabel
+    Keep this in mind as you learn
+*/
 const person = {
     name: ['Dariyanti', 'Yanti'],
     age: 21,

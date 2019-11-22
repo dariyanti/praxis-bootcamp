@@ -28,3 +28,8 @@ Note :untuk membuat package.json dengan cepat maka hanya dengan menggunakan `npm
 didalam direktori yang telah terinstal npm akan muncul file dengan nama `package-lock.json` 
 
 ![alt text](gambar/package.png)
+
+7. Object di JavaScript
+ berikut merupakan hasil ketika kita mengetik di console dengan script yang berisi biodata.
+
+![alt text](gambar/ObjectJs.png)
