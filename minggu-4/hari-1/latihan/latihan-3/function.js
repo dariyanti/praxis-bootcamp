@@ -1,3 +1,4 @@
+//books merupakan Object dengan isi array dan didalam array ada object lagi
 var books = [{
         name: 'JavaScript',
         pages: 450

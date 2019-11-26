@@ -1,0 +1,3 @@
+Callback sebenarnya adalah function bedanya dengan function pada umumnya 
+adalah di cara eksekusinya. Jika function pada umumnya di eksekusi berurutan dari atas ke bawah
+maka callback di eksekusi pada point tertentu, itu sebabnya di sebut callback.
