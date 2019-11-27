@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Method</title>
+</head>
+
+<body>
+    <h1>Beberapa Method dalam JavaScript untuk Manipulasi DOM</h1>
+    <ol>
+        <li>querySelector()</li>
+
+        <p>paragraph one</p>
+        <p>paragraph two</p>
+        <div>div one</div>
+        <p>paragraph three</p>
+        <div>div two</div>
+        <br>
+
+        <li>querySelectorAll()</li>
+
+        <p>paragraph one</p>
+        <p>paragraph two</p>
+        <div>div one</div>
+        <p>paragraph three</p>
+        <div>div two</div>
+        <br>
+
+        <li>addEventListener()</li>
+        <button>Click Me</button>
+        <br>
+        <br>
+        <li>removeEventListener()</li>
+        <button>Click Me</button>
+        <br>
+        <br>
+        <li>appendChild()</li>
+        <h3>
+            <strong>Hello World</strong>
+        </h3>
+        <br>
+        <li>replaceChild</li>
+        <h4>
+            <strong>Hello World</strong>
+        </h4>
+        <br>
+        <li>cloneNode()</li>
+        <h5>
+            <strong>Hello</strong>
+        </h5>
+        <br>
+        <li>insertBefore()</li>
+        <div>
+            <strong>Greeting</strong>
+        </div>
+        <br>
+        <li>createDocumentFragment()</li>
+        <table></table>
+        <br>
+        <li>getAttribute()</li>
+        <div contenteditable="true">Hello</div>
+    </ol>
+</body>
+<script>
+    //ini querySelector()
+    var firstDiv = document.querySelector('div');
+    firstDiv.style.color = 'red';
+    //ini querySelectorAll()
+    var paragraphs = document.querySelectorAll('p');
+    for (var p of paragraphs)
+        p.style.color = 'blue';
+    //ini addEventListener()
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', foo);
+
+    function foo() {
+        alert('hello');
+    }
+    //ini removeEventListener()
+    btn.removeEventListener('click', foo);
+    //ini appendChild()
+    var h3 = document.querySelector('h3');
+    var strong = document.createElement('strong');
+    strong.textContent = 'Hello';
+    h3.appendChild(strong);
+    //replaceChild()
+    var em = document.createElement('em');
+    var strong = document.querySelector('strong');
+    var h4 = document.querySelector('h4');
+    em.textContent = 'hi';
+    h4.replaceChild(em, strong);
+    //cloneNode()
+    var strong = document.querySelector('strong');
+    var copy = strong.cloneNode(true);
+    var h5 = document.querySelector('h5');
+    h5.appendChild(copy);
+    //insertBefore()
+    var em = document.createElement('em');
+    var strong = document.querySelector('strong');
+    var div = document.querySelector('div');
+    em.textContent = 'hi';
+    div.insertBefore(em, strong);
+    //getAttribute()
+    var div = document.querySelector('div');
+    alert(div.getAttribute('contenteditable'))
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>Ini Contoh Document Object Model</h1>
+    <p>Hallo, Saya Dariyanti</p>
+    <p>Saya sedang membaca buku ini loh!
+        <a href="http://eloquentjavascript.net" onclick="Button">Klik Disini</a></p>
+    <br>
+    <p>Ini Gambar Bunga Dengan DOM</p>
+    <br>
+    <p><img src="asset/bunga.png" alt=""></p>
+    <p>The <img src="asset/html.png" alt="Html"> in the
+        <img src="asset/js.jpg" alt="JavaScript">.</p>
+
+    <p><button onclick="replaceImages()">Replace</button></p>
+</body>
+<script>
+    //let bunga = document.getElementsById("bunga");
+    //console.log(bunga.src);
+    function replaceImages() {
+        let images = document.body.getElementsByTagName("img");
+        for (let i = images.length - 1; i >= 0; i--) {
+            let image = images[i];
+            if (image.alt) {
+                let text = document.createTextNode(image.alt);
+                image.parentNode.replaceChild(text, image);
+            }
+        }
+    }
+</script>
+
+</html>
