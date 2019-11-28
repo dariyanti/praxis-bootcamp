@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan Vue.js</title>
+</head>
+
+<body>
+    <h2>Belajar Vue.js</h2>
+    <div id="app-1">
+        <span v-bind:title="message">
+            Arahkan mouse Anda kesini dan tunggu dalam beberapa detik
+            untuk melihat judul pesan yang dinamis
+        </span>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue">
+        //jika tidak menggunakan source ini maka tidak akan muncul 
+        //v-bind diatas adalah atribut 
+    </script>
+    <script>
+        var app2 = new Vue({
+            el: '#app-1',
+            data: {
+                message: 'Anda memuat halaman ini pada jam ' + new Date().toLocaleString()
+            }
+        })
+    </script>
+</body>
+
+</html>

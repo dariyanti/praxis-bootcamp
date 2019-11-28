@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>perulangan</title>
+</head>
+
+<body>
+    <div id="app-2">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var app4 = new Vue({
+            el: "#app-2",
+            data: {
+                todos: [{
+                        text: 'Belajar JavaScript'
+                    },
+                    {
+                        text: 'Belajar Vue'
+                    },
+                    {
+                        text: 'Ini Project Luar Biasa'
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>
